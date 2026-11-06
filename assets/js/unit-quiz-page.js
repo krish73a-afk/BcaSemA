@@ -144,5 +144,6 @@
     else if (target.matches('[data-next]')) next();
   });
   markButton?.addEventListener('click', toggleComplete);
+  document.getElementById('print-notes')?.addEventListener('click', () => window.print());
   updateProgress();
 })();
