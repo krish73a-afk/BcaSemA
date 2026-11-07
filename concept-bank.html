@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b13">
+  <meta name="description" content="Search the complete BCA Semester I concept bank across six subjects and 27 units.">
+  <title>Semester Master Bank · BcaSemA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dark-theme.css">
+  <link rel="stylesheet" href="assets/css/master-bank.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/unit-concept-notes.js"></script>
+  <script defer src="assets/js/unit-subtopics.js"></script>
+  <script defer src="assets/js/unit-advanced-subtopics.js"></script>
+  <script defer src="assets/js/unit-master-topics.js"></script>
+  <script defer src="assets/js/unit-master-topics-extra.js"></script>
+  <script defer src="assets/js/unit-master-topics-stem.js"></script>
+  <script defer src="assets/js/concept-bank.js"></script>
+</head>
+<body>
+  <header class="bank-topbar">
+    <a class="bank-brand" href="index.html"><span>✦</span><strong>BcaSemA<small>THE SEMESTER I PLAYBOOK</small></strong></a>
+    <nav aria-label="Main pages"><a href="index.html">Overview</a><a href="index.html#subjects">Subjects</a><a class="active" href="concept-bank.html">Master bank</a><a href="study-path.html">Study path</a></nav>
+    <a class="button small secondary bank-back" href="index.html">Back to semester ↗</a>
+  </header>
+  <main class="bank-main">
+    <section class="bank-hero">
+      <div><p class="eyebrow">BCA SEMESTER I · SEARCHABLE NOTES</p><h1>The Semester <span>Master Bank</span></h1><p>Find a concept, read its explanation and example, then jump straight to the full unit notebook for diagrams, worked questions and the mock.</p>
+        <div class="bank-stat-row"><span><b id="bank-total">—</b> concepts</span><span><b>6</b> subjects</span><span><b>27</b> unit notebooks</span></div></div>
+      <div class="bank-hero-art" aria-hidden="true"><div class="bank-orbit"></div><div class="bank-core">▦</div><span>SEARCH</span><i>✦</i></div>
+    </section>
+    <section class="bank-workspace" aria-label="Search and browse concepts">
+      <div class="bank-controls"><label class="bank-search"><span>⌕</span><input id="bank-search" type="search" placeholder="Search concepts, examples, or exam tips…" autocomplete="off"><kbd>Search all notes</kbd></label>
+        <div class="bank-selects"><label><span>SUBJECT</span><select id="bank-subject"><option value="">All subjects</option></select></label><label><span>UNIT</span><select id="bank-unit"><option value="">All units</option></select></label><button id="bank-clear" class="button small secondary">Clear filters</button></div>
+        <div class="bank-result-line"><strong id="bank-result-count">Loading every concept…</strong><span>Open a card's full unit for step-by-step lessons and visual questions.</span></div>
+      </div>
+      <div id="bank-results" class="bank-results" aria-live="polite"></div>
+      <div class="bank-more-wrap"><button id="bank-more" class="button primary" hidden>Show more concepts <span>↓</span></button><span id="bank-end-note" hidden>That is every matching concept.</span></div>
+      <p id="bank-empty" class="bank-empty" hidden>No concepts match these filters. Try a broader word or clear a filter.</p>
+    </section>
+  </main>
+  <footer class="bank-footer"><span>Every concept links to its full unit notebook.</span><a href="index.html">Return to BcaSemA ↗</a></footer>
+</body>
+</html>

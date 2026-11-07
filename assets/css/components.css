@@ -36,3 +36,7 @@
 .unit-trigger-row .unit-trigger{flex:1;min-width:0;width:auto}
 .view-full-unit{flex:none;white-space:nowrap}
 @media(max-width:650px){.unit-trigger-row{align-items:flex-start;gap:4px;padding-right:8px}.unit-trigger-row .unit-trigger{gap:8px;padding:11px 7px}.view-full-unit{margin-top:10px;font-size:8px!important;padding:6px 7px!important}.unit-trigger-copy span{max-width:52vw}}
+@media(max-width:520px){.unit-trigger-row{flex-wrap:wrap;gap:0}.unit-trigger-row .unit-trigger{flex:1 1 100%}.unit-trigger-row .view-full-unit{margin:0 0 9px 46px}.unit-trigger-copy strong{overflow-wrap:anywhere}}
+.unit-card,.source-lesson,.model-answer-card,.unit-test,.lesson-main,.lesson-side{min-width:0}
+.source-lesson pre,.guide-page pre,.full-note pre{max-width:100%;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:520px){.source-lesson{padding:10px}.source-lesson-heading h3{font-size:12px}.unit-goal{padding:10px}.unit-card .view-full-unit{min-height:30px}}
